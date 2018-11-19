@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactSVG from 'react-svg';
 import TopNav from '../TopNav'
 
 class Header extends Component {
@@ -13,7 +12,7 @@ class Header extends Component {
        </div>
        <TopNav /> 
        </div> 
-       <h1> THI IS A HEADLINE.</h1>
+       <h1> THIS IS A HEADLINE.</h1>
        </div>
     );
 }

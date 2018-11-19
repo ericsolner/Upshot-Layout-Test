@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 //import {Route, Switch } from 'react-router-dom';
-import Nav from '../nav';
-import Skills from './pages/skills';
+import Products from './pages/products';
 import About from './pages/about';
 
 class Main extends Component {
@@ -11,10 +10,8 @@ class Main extends Component {
   render() {
     return (
       <main>
-
-        <About/>
-        
-        <Skills/>
+      <About/>      
+      <Products/>
 
 
       </main>
