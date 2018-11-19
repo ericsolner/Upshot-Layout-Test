@@ -1,17 +1,13 @@
 {
-  "name": "eric-solner-com",
+  "name": "upshot-layout-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "animated": "^0.2.2",
     "react": "^16.4.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.4.0",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
     "react-scripts": "^2.1.1",
-    "react-svg": "^4.0.13",
-    "react-transition-group": "^2.3.1",
-    "react-waypoint": "^8.0.1"
   },
   "scripts": {
     "start": "react-scripts-with-sass start",

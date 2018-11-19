@@ -1,0 +1,27 @@
+.ProductNav {
+  height: 100%;
+  margin: 30px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ProductNav p {
+  color: black;
+  font-weight: bold;
+  margin: 7px;
+}
+.ProductNav p:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .ProductNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+

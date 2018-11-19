@@ -1,92 +1,30 @@
-nav{
-    width:100%;
-    padding:0.5rem;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    background:$white;
-    @include transition(all 0.25s);
-
-    &.locked{
-        position: fixed;
-        width:100%;
-        top:0;
-        left:0;
-
-        ul li{
-            &.icon{
-                max-width:100px;
-                @include transform(scale(1));
-                @include opacity(1);
-            }
-        }
-
-    }
-
-    .logo{
-        max-width:8rem;
-        width: 100%;
-
-        img, svg{
-            width:100%;
-            fill:$gold;
-        }
-    }
-
-    ul{
-        margin:0;
-        padding:0;
-        list-style-type:none;
-        display: flex;
-        align-items: center;
-
-        li{
-            @include transition(all 0.5s);
-
-            a{
-                display: block;
-                text-decoration:none;
-                font-size:0.75rem;
-                text-transform: uppercase;
-                padding:0.25rem;
-                margin:0.25rem;
-                @include transition(all 0.25s);
-
-                &:hover{
-                    color:$gold;
-            
-                    img, svg{
-                        fill:$gold;
-                        @include transform(scale(1.25));
-                    }
-                }
-                
-                color:$navy;
-
-                img, svg{
-                    width:100%;
-                    max-width: 1.25rem;
-                    @include transition(all 0.25s);
-                }
-            }
-
-            &.icon{
-                max-width:0px;
-                overflow:hidden;
-                @include transform(scale(2));
-                @include opacity(0);
-            }
-
-            &:last-child{
-                a{margin-right:0;}
-            }
-        }
-    }
-
+.HeaderNav {
+  z-index: 2000;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50%;
+  margin-top: 20px;
+  width: 40vw;
+  align-items: center;
+}
+.HeaderNav p {
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+  margin: 0;
+}
+.HeaderNav p:hover {
+  cursor: pointer;
 }
 
-footer{
-    display:none;
+@media (max-width: 900px) {
+  .HeaderNav {
+    margin-left: 30%;
+    width: 65vw;
+  }
+}
+@media (max-width: 550px) {
+  .HeaderNav {
+    margin-left: 0;
+  }
 }

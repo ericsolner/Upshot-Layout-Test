@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import {Route, Switch } from 'react-router-dom';
-import Products from './pages/products';
+import Products from './pages/productCont/products/';
 import About from './pages/about';
 
 class Main extends Component {
@@ -12,8 +12,6 @@ class Main extends Component {
       <main>
       <About/>      
       <Products/>
-
-
       </main>
     );
   }
